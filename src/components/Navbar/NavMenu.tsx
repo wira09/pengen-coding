@@ -9,6 +9,7 @@ const NavMenu = () => {
     { name: "Beranda", path: "/" },
     { name: "Portofolio", path: "/portofolio" },
     { name: "Materi", path: "/materi" },
+    { name: "Souce Code", path: "/code" },
     { name: "Kontak", path: "/kontak" },
   ];
 

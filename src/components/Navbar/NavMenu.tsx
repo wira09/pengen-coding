@@ -3,8 +3,10 @@ import Link from "next/link";
 const NavMenu = () => {
     const navLink = [
         { name: "Home", path: "/" },
-        { name: "Courses", path: "/" },
-        { name: "Princing", path: "/" }
+        { name: "Course", path: "/course" },
+        { name: "Pricing", path: "/pricing" },
+        {name: "Dashboard", path: "/dashboard"},
+        {name: "Contact", path: "/contact"}
     ];
 
     return (

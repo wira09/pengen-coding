@@ -7,10 +7,10 @@ const Navbar = () => {
         <div className="bg-gray-800 w-full flex justify-between py-3 px-5 items-center">
             <div className="">
                 <Image
-                    src="/next.svg"
-                    alt="logo"
-                    height={150}
-                    width={150}
+                    src="/pengen-coding.png"
+                    alt="Pengen Coding"
+                    height={80}
+                    width={80}
                     className="object-cover object-center"
                 />
             </div>

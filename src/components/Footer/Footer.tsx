@@ -3,7 +3,7 @@ import FooterLink from "@/components/Footer/FooterLink";
 
 const Footer = () => {
     return (
-        <div className="p-5 bg-gray-800 flex gap-5 justify-between">
+        <div className="p-5 bg-gray-800 flex gap-5 justify-between ">
             <div className="flex flex-col gap-3">
                 <Image
                     src="/pengen-coding.png"

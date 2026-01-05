@@ -20,7 +20,7 @@ const Navbar = () => {
           <div className="flex items-center gap-3">
             {/* Mobile Menu */}
             <button
-              className="lg:hidden btn btn-ghost btn-sm"
+              className="lg:hidden btn btn-ghost btn-sm text-r"
               onClick={toggleMenu}
               aria-label="Toggle menu"
             >
@@ -43,8 +43,8 @@ const Navbar = () => {
               </svg>
             </button>
 
-            {/* Logo */}
-            <div className="flex items-center gap-2">
+            {/* Logo for desktop */}
+            <div className="hidden lg:flex items-center gap-2">
               <Image
                 src="/pengen-coding.png"
                 alt="Pengen Coding"
@@ -63,8 +63,24 @@ const Navbar = () => {
           </nav>
 
           {/* RIGHT */}
-          <div className="hidden lg:flex items-center gap-3">
-            <NavButton />
+          <div className="flex items-center gap-3">
+            {/* Logo for mobile */}
+            <div className="lg:hidden flex items-center gap-2">
+              <Image
+                src="/pengen-coding.png"
+                alt="Pengen Coding"
+                width={120}
+                height={120}
+              />
+              {/* <span className="hidden sm:block text-lg font-bold text-gray-800">
+                Pengen <span className="font-bold text-amber-600">Coding</span>
+              </span> */}
+            </div>
+
+            {/* NavButton for desktop */}
+            <div className="hidden lg:flex">
+              <NavButton />
+            </div>
           </div>
         </div>
 

@@ -1,4 +1,5 @@
 import Dashboard from "@/components/page/Dashboard";
+import About from "@/components/page/About";
 const Home = () => {
   return (
     <main>
@@ -9,6 +10,7 @@ const Home = () => {
           { name: "Contact", path: "/contact" },
         ]}
       />
+      <About />
     </main>
   );
 };

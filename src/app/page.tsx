@@ -1,11 +1,16 @@
+import Dashboard from "@/components/page/Dashboard";
 const Home = () => {
-    return (
-        <main>
-            <h1 className="font-extrabold p-15 text-center text-7xl text-gray-100">
-                Home Page Njir
-            </h1>
-        </main>
-    );
+  return (
+    <main>
+      <Dashboard
+        title="Pengen"
+        links={[
+          { name: "Mulai Belajar", path: "/belajar" },
+          { name: "Contact", path: "/contact" },
+        ]}
+      />
+    </main>
+  );
 };
 
 export default Home;

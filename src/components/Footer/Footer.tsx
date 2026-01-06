@@ -17,8 +17,7 @@ const Footer = () => {
             </div>
 
             <p className="mt-4 max-w-xs text-gray-500 text-justify">
-              Berhenti Bermimpi, Mulai Membangun. Pengen Coding membantu Anda
-              menciptakan standar baru di dunia digital.<br/>Butuh bantuan atau ingin
+              Butuh bantuan atau ingin
               menyampaikan keluhan? Masukkan email Anda di kontak, tim kami akan
               segera merespons secara langsung.
             </p>

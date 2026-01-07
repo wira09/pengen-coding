@@ -1,6 +1,7 @@
 import Dashboard from "@/components/page/Dashboard";
 import About from "@/components/page/About";
-import Why from "@/components/page/Price";
+import Price from "@/components/page/Price";
+import Accordion from "@/components/page/Accordion";
 
 const Home = () => {
   return (
@@ -13,7 +14,8 @@ const Home = () => {
         ]}
       />
       <About />
-      <Why />
+      <Price />
+      <Accordion />
     </main>
   );
 };

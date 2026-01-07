@@ -35,11 +35,11 @@ const Price = () => {
       kalangan: "Pelajar / Umum",
       price: "50K",
       title: "Fullstack MERN",
-      stack: "MongoDB, Express.js, React.js, Node.js",
+      stack: "MariaDB, Express.js, React.js, Node.js",
       descriptions: [
         "Backend dengan Node.js & Express",
         "REST API & JWT Authentication",
-        "MongoDB + Mongoose",
+        "MariaDB + Prisma",
         "Frontend React (Hooks & State)",
         "Fullstack real project",
       ],
@@ -51,7 +51,7 @@ const Price = () => {
       kalangan: "Pelajar / Umum",
       price: "50K",
       title: "PHP Fullstack (Laravel)",
-      stack: "Laravel, MySQL / PostgreSQL, Tailwind CSS",
+      stack: "Laravel, MariaDB / PostgreSQL, Tailwind CSS",
       descriptions: [
         "Dasar PHP & MVC",
         "Laravel routing & controller",

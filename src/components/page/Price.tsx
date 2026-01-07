@@ -68,7 +68,9 @@ const Price = () => {
       <div className="mx-auto max-w-7xl px-4 py-16">
         {/* Title */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold text-amber-600">Paket Pelatihan</h1>
+          <h1 className="text-4xl font-bold text-amber-600 sm:text-5xl">
+            Paket Pelatihan
+          </h1>
           <div className="mt-3 h-1 w-32 rounded bg-amber-500" />
         </div>
 
@@ -79,7 +81,7 @@ const Price = () => {
               key={item.id}
               className="rounded-2xl border border-gray-200 bg-white p-8 shadow-xl"
             >
-              <h3 className="text-xl font-semibold text-gray-900">
+              <h3 className="text-xl font-semibold text-amber-500">
                 {item.paket}
               </h3>
               <p className="mb-4 text-gray-600">{item.kalangan}</p>

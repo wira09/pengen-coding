@@ -17,9 +17,8 @@ const Footer = () => {
             </div>
 
             <p className="mt-4 max-w-xs text-gray-500 text-justify">
-              Butuh bantuan atau ingin
-              menyampaikan keluhan? Masukkan email Anda di kontak, tim kami akan
-              segera merespons secara langsung.
+              Butuh bantuan atau ingin menyampaikan keluhan? Masukkan email Anda
+              di kontak, tim kami akan segera merespons secara langsung.
             </p>
 
             <ul className="mt-8 flex gap-6">
@@ -145,7 +144,8 @@ const Footer = () => {
         </div>
 
         <p className="text-xs text-gray-500">
-          © 2026. Company Pengen Coding. All rights reserved.
+          © {new Date().getFullYear()}. Company Pengen Coding. All rights
+          reserved.
         </p>
       </div>
     </footer>

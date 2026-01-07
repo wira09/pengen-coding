@@ -1,5 +1,7 @@
 import Dashboard from "@/components/page/Dashboard";
 import About from "@/components/page/About";
+import Why from "@/components/page/Price";
+
 const Home = () => {
   return (
     <main>
@@ -11,6 +13,7 @@ const Home = () => {
         ]}
       />
       <About />
+      <Why />
     </main>
   );
 };

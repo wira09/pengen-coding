@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    // mengizinkan url gambar dari pihak eksternal
+    unoptimized: true,
+  },
   reactCompiler: true,
 };
 

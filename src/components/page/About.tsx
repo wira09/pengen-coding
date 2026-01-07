@@ -18,7 +18,7 @@ const About = () => {
       role: "Web Developer & Mentor",
       description: "Berpengalaman dalam pengembangan aplikasi web...",
       image: "/foto/wira.jpeg",
-      profileUrl: "/profile/wira",
+      profileUrl: "https://portofolio-wira.vercel.app/",
     },
     {
       id: 2,

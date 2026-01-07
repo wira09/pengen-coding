@@ -150,38 +150,49 @@ const menukelas = () => {
     },
   ];
   return (
-    <section className="bg-white">
-      <div className="mx-auto w-full max-w-7xl">
-        {/* Cards */}
+    <section className="bg-white py-16" id="kelas">
+      <div className="mx-auto max-w-7xl px-4">
+        <div className="mb-12 text-center">
+          <h2 className="text-3xl font-bold text-slate-800">
+            Source Code Siap Pakai
+          </h2>
+          <p className="mt-3 text-slate-600">
+            Hemat waktu development dengan source code rapi & reusable 🚀
+          </p>
+        </div>
+
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {kelasSections.map((item) => (
-            <div key={item.id}>
-              <div
-                key={item.name}
-                className="flex flex-col rounded-lg border border-slate-200 bg-white shadow-sm transition hover:shadow-md"
-              >
-                {/* Image */}
-                <div className="relative h-72 w-full overflow-hidden rounded-t-lg">
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                </div>
+            <div
+              key={item.id}
+              className="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition hover:shadow-lg"
+            >
+              {/* Image */}
+              <div className="relative h-56 w-full">
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  fill
+                  className="object-cover"
+                />
+              </div>
 
-                {/* Content */}
-                <div className="flex flex-col flex-grow p-6 text-center">
-                  <h4 className="text-xl font-semibold text-slate-800">
-                    {item.level}
-                  </h4>
+              {/* Content */}
+              <div className="flex flex-grow flex-col p-6">
+                <h3 className="text-xl font-semibold text-slate-800">
+                  {item.name}
+                </h3>
 
-                  <p className="mt-4 text-base text-slate-600 font-light">
-                    {item.description}
-                  </p>
+                <span className="mt-1 text-sm text-slate-500">
+                  Level: {item.level}
+                </span>
 
-                  {/* status kelas */}
+                <p className="mt-4 flex-grow text-sm text-slate-600">
+                  {item.description}
+                </p>
+
+                {/* Price */}
+                <div className="mt-4">
                   {item.isGratis ? (
                     <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-700">
                       GRATIS
@@ -191,18 +202,19 @@ const menukelas = () => {
                       Rp {item.price.toLocaleString("id-ID")}
                     </span>
                   )}
-
-                  {/* Button */}
-                  <div className="mt-6">
-                    <Link
-                      href={item.kelasUrl}
-                      target="_blank"
-                      className="inline-block rounded-md bg-slate-800 px-6 py-2 text-sm font-medium text-white shadow transition hover:bg-slate-700"
-                    >
-                      Lihat Kelas
-                    </Link>
-                  </div>
                 </div>
+
+                {/* CTA */}
+                <Link
+                  href={item.kelasUrl}
+                  className={`mt-6 inline-flex items-center justify-center rounded-md px-5 py-2 text-sm font-semibold text-white transition ${
+                    item.isGratis
+                      ? "bg-slate-800 hover:bg-slate-700"
+                      : "bg-amber-600 hover:bg-amber-700"
+                  }`}
+                >
+                  {item.isGratis ? "Download Source" : "Beli Source"}
+                </Link>
               </div>
             </div>
           ))}

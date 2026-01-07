@@ -28,38 +28,31 @@ const FooterLinkSection = ({ title, links }: FooterLinkProps) => {
 const FooterLink = () => {
   const footerSections = [
     {
-      title: "Services",
+      title: "Materi",
       links: [
-        { name: "1on1 Coaching", path: "/services/coaching" },
-        { name: "Company Review", path: "/services/company-review" },
-        { name: "Accounts Review", path: "/services/accounts-review" },
-        { name: "HR Consulting", path: "/services/hr-consulting" },
-        { name: "SEO Optimisation", path: "/services/seo" },
+        { name: "Pemula", path: "/services/coaching" },
+        { name: "Menengah", path: "/services/company-review" },
+        { name: "Mahir", path: "/services/accounts-review" },
+        { name: "Front End Developer", path: "/services/seo" },
+        { name: "Back End Developer", path: "/services/seo" },
+        { name: "Fullstack Developer", path: "/services/hr-consulting" },
       ],
     },
     {
-      title: "Company",
+      title: "Masukan",
       links: [
-        { name: "About", path: "/about" },
-        { name: "Meet the Team", path: "/team" },
-        { name: "Accounts Review", path: "/accounts" },
+        { name: "Kontak", path: "/kontak" },
+        // { name: "Hubungi", path: "/faqs" },
+        // { name: "Live Chat", path: "/chat" },
       ],
     },
     {
-      title: "Helpful Links",
+      title: "Souce Code",
       links: [
-        { name: "Contact", path: "/contact" },
-        { name: "FAQs", path: "/faqs" },
-        { name: "Live Chat", path: "/chat" },
-      ],
-    },
-    {
-      title: "Legal",
-      links: [
-        { name: "Accessibility", path: "/legal/accessibility" },
-        { name: "Returns Policy", path: "/legal/returns" },
-        { name: "Refund Policy", path: "/legal/refund" },
-        { name: "Hiring-3 Statistics", path: "/legal/hiring" },
+        { name: "PHP", path: "/legal/accessibility" },
+        { name: "Laravel", path: "/legal/returns" },
+        { name: "MERN", path: "/legal/refund" },
+        { name: "Next JS", path: "/legal/hiring" },
       ],
     },
   ];

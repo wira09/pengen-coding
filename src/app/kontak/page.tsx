@@ -40,12 +40,12 @@ const Kontak = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Telepon</h3>
-                  <p className="text-gray-600 mt-1">+62 812 ХХ ХХХ ХХХ</p>
+                  <p className="text-gray-600 mt-1">+62 851 7994 7809</p>
                 </div>
               </div>
 
               {/* Email */}
-              <div className="flex items-start space-x-4 p-4 rounded-lg hover:bg-amber-50 transition-colors duration-200">
+              {/* <div className="flex items-start space-x-4 p-4 rounded-lg hover:bg-amber-50 transition-colors duration-200">
                 <div className="bg-amber-100 p-3 rounded-full">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ const Kontak = () => {
                   <h3 className="font-semibold text-gray-900">Email</h3>
                   <p className="text-gray-600 mt-1">info@pengencoding.com</p>
                 </div>
-              </div>
+              </div> */}
 
               {/* Address */}
               <div className="flex items-start space-x-4 p-4 rounded-lg hover:bg-amber-50 transition-colors duration-200">

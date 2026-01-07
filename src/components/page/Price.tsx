@@ -68,7 +68,7 @@ const Price = () => {
         {/* Title */}
         <div className="mb-12">
           <h1 className="text-4xl font-bold text-amber-600 sm:text-5xl">
-            Paket Pelatihan
+            Paket Kelas
           </h1>
           <div className="mt-3 h-1 w-32 rounded bg-amber-500" />
         </div>

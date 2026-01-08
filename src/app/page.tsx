@@ -1,7 +1,7 @@
-import Dashboard from "@/components/page/Dashboard";
-import About from "@/components/page/About";
-import Price from "@/components/page/Price";
-import Accordion from "@/components/page/Accordion";
+import Dashboard from "../components/page/Dashboard";
+import About from "../components/page/About";
+import Price from "../components/page/Price";
+import Accordion from "../components/page/Accordion";
 import Tools from "./Tools/page";
 
 const Home = () => {

@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import NavMenu from "@/components/Navbar/NavMenu";
-import NavButton from "@/components/Navbar/NavButton";
+import NavMenu from "./NavMenu";
+import NavButton from "./NavButton";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

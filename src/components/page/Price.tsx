@@ -78,7 +78,7 @@ const Price = () => {
           {priceSection.map((item) => (
             <div
               key={item.id}
-              className="rounded-2xl border border-gray-200 bg-white p-8 shadow-xl"
+              className="flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-8 shadow-xl"
             >
               <h3 className="text-xl font-semibold text-amber-500">
                 {item.paket}
@@ -120,9 +120,10 @@ const Price = () => {
                 ))}
               </ul>
 
+              {/* tombol */}
               <Link
                 href={`/daftar?paket=${item.paket}`}
-                className="block w-full rounded-lg bg-amber-600 py-3 text-center font-semibold text-white transition hover:bg-amber-700"
+                className="mt-auto block w-full rounded-lg bg-amber-600 py-3 text-center font-semibold text-white transition hover:bg-amber-700"
               >
                 Daftar Sekarang
               </Link>

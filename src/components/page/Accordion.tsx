@@ -22,7 +22,7 @@ const Accordion = () => {
       id: 3,
       soal: "Apakah kelas ini berbentuk video atau teks?",
       jawaban:
-        "Kelas disediakan dalam bentuk materi teks yang mudah dipahami dan bisa dibaca kapan saja.",
+        "Kelas disediakan dalam bentuk materi video atau teks yang mudah dipahami dan bisa dibaca kapan saja.",
     },
     {
       id: 4,

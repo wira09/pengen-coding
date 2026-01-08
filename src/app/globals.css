@@ -54,6 +54,16 @@ body {
 /* Marquee animations */
 @keyframes marquee-horizontal {
   from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-horizontal-reverse {
+  from {
     transform: translateX(-50%);
   }
 
@@ -62,20 +72,14 @@ body {
   }
 }
 
-@keyframes marquee-vertical {
-  from {
-      transform: translateX(0);
-    }
-  
-    to {
-      transform: translateX(-50%);
-    }
-}
-
 .animate-marquee-horizontal {
   animation: marquee-horizontal var(--duration, 40s) linear infinite;
 }
 
-.animate-marquee-vertical {
-  animation: marquee-vertical var(--duration, 40s) linear infinite;
+.animate-marquee-horizontal-reverse {
+  animation: marquee-horizontal-reverse var(--duration, 40s) linear infinite;
 }
+
+/* .animate-marquee-vertical {
+  animation: marquee-vertical var(--duration, 40s) linear infinite;
+} */

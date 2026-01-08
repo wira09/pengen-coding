@@ -54,20 +54,22 @@ body {
 /* Marquee animations */
 @keyframes marquee-horizontal {
   from {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
+
   to {
-    transform: translateX(calc(-100% - var(--gap)));
+    transform: translateX(0);
   }
 }
 
 @keyframes marquee-vertical {
   from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(calc(-100% - var(--gap)));
-  }
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(-50%);
+    }
 }
 
 .animate-marquee-horizontal {

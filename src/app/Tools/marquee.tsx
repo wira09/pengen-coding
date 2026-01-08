@@ -46,9 +46,10 @@ export default function Marquee({
             key={index}
             className={cn(
               "flex shrink-0 [gap:var(--gap)]",
-              reverse && "[animation-direction:reverse]",
               vertical
                 ? "animate-marquee-vertical flex-col"
+                : reverse
+                ? "animate-marquee-horizontal-reverse flex-row items-center"
                 : "animate-marquee-horizontal flex-row items-center"
             )}
             style={{ animationPlayState: isPaused ? "paused" : "running" }}

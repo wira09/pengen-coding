@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import TextType from "@/animation/TextType";
+import TextType from "@/src/animation/TextType";
 
 interface DashboardLinkProps {
   title: string;

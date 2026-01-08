@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 // Array of tool objects with name and icon properties
 export const toolsSections = [

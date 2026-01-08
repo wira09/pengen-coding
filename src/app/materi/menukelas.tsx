@@ -209,11 +209,11 @@ const menukelas = () => {
                   href={item.kelasUrl}
                   className={`mt-6 inline-flex items-center justify-center rounded-md px-5 py-2 text-sm font-semibold text-white transition ${
                     item.isGratis
-                      ? "bg-slate-800 hover:bg-slate-700"
+                      ? "bg-green-600 hover:bg-green-700" // kalau misalnya ada logika kalau free dia warna ijo
                       : "bg-amber-600 hover:bg-amber-700"
                   }`}
                 >
-                  {item.isGratis ? "Download Source" : "Beli Source"}
+                  {item.isGratis ? "Lihat Kelas" : "Lihat Kelas"}
                 </Link>
               </div>
             </div>

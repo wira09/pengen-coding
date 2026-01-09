@@ -15,25 +15,28 @@ const About = () => {
     {
       id: 1,
       name: "Mohamad Zaelani Wira Kusuma",
-      role: "Web Developer & Mentor",
-      description: "Berpengalaman dalam pengembangan aplikasi web...",
+      role: "Founder",
+      description:
+        "Seorang mahasiswa yang menguasai pengembangan Web dan Android, terbiasa membangun aplikasi fungsional dengan tampilan responsif dan user-friendly.",
       image: "/foto/wira.jpeg",
       profileUrl: "https://portofolio-wira.vercel.app/",
     },
     {
       id: 2,
-      name: "Mohamad Zaelani Wira Kusuma",
-      role: "Web Developer & Mentor",
-      description: "Berpengalaman dalam pengembangan aplikasi web...",
-      image: "/foto/wira.jpeg",
-      profileUrl: "/profile/wira",
+      name: "Farhan Kertadiwangsa",
+      role: "Supporter",
+      description:
+        "Berpengalaman dalam pengembangan Web, Artificial Intelligence (AI), dan Python, fokus pada solusi Prompt AI dan otomatisasi sistem.",
+      image: "/foto/farhan.jpeg",
+      profileUrl: "https://www.farhankertadiwangsa.biz.id/",
     },
     {
       id: 3,
-      name: "Mohamad Zaelani Wira Kusuma",
-      role: "Web Developer & Mentor",
-      description: "Berpengalaman dalam pengembangan aplikasi web...",
-      image: "/foto/wira.jpeg",
+      name: "Ilham",
+      role: "Promoter",
+      description:
+        "Memiliki keahlian di bidang pengembangan Web, berfokus pada pembuatan website yang efisien, modern, dan mudah digunakan.",
+      image: "/foto/ilham.jpeg",
       profileUrl: "/profile/wira",
     },
   ];
@@ -52,10 +55,10 @@ const About = () => {
         {/* Cards */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {aboutSections.map((item) => (
-            <div key={item.id}>
+            <div key={item.id} className="h-full">
               <div
                 key={item.name}
-                className="flex flex-col rounded-lg border border-slate-200 bg-white shadow-sm transition hover:shadow-md"
+                className="flex h-full flex-col rounded-lg border border-slate-200 bg-white shadow-sm transition hover:shadow-md"
               >
                 {/* Image */}
                 <div className="relative h-72 w-full overflow-hidden rounded-t-lg">
@@ -73,7 +76,8 @@ const About = () => {
                   <h4 className="text-xl font-semibold text-slate-800">
                     {item.name}
                   </h4>
-                  <div className="flex flex-wrap gap-2 justify-center">
+
+                  <div className="flex flex-wrap justify-center gap-2 mt-2">
                     <p className="px-3 py-1 text-sm font-medium rounded-full bg-amber-500 text-white">
                       {item.role}
                     </p>
@@ -84,7 +88,7 @@ const About = () => {
                   </p>
 
                   {/* Button */}
-                  <div className="mt-6">
+                  <div className="mt-auto pt-6">
                     <Link
                       href={item.profileUrl}
                       target="_blank"

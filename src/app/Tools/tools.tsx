@@ -158,6 +158,25 @@ export const toolsSections = [
     description: "Tools",
     kelasURL: "#",
   },
+  {
+    name: "Composer",
+    iconURL: "/tools/Composer.png",
+    description: "Tools",
+    kelasURL: "#",
+  },
+  {
+    name: "NPM",
+    iconURL: "/tools/NPM.png",
+    description: "Tools",
+    kelasURL: "#",
+  },
+  // OS
+  {
+    name: "Linux",
+    iconURL: "/tools/Linux.png",
+    description: "OS",
+    kelasURL: "#",
+  },
 ];
 
 const ToolsPlaceholder = () => {

@@ -10,8 +10,8 @@ const Home = () => {
       <Dashboard
         title="Pengen"
         links={[
-          { name: "Mulai Belajar", path: "/belajar" },
-          { name: "Contact", path: "/contact" },
+          { name: "Mulai Belajar", path: "/materi" },
+          { name: "Kontak", path: "/kontak" },
         ]}
       />
       <div className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-32">

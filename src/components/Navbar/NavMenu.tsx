@@ -19,17 +19,19 @@ const NavMenu = () => {
           key={link.name}
           href={link.path}
           className={`font-medium text-gray-700 hover:text-amber-600 px-4 py-2.5 rounded-lg transition-all duration-300 relative group ${
-            pathname === link.path ? 'text-amber-600 font-semibold' : ''
+            pathname === link.path ? "font-semibold text-amber-600" : ""
           }`}
           onClick={() => {
             // Close mobile menu when a link is clicked on mobile
             if (window.innerWidth < 1024) {
-              const event = new MouseEvent('click', {
+              const event = new MouseEvent("click", {
                 view: window,
                 bubbles: true,
                 cancelable: true,
               });
-              const menuButton = document.querySelector('button[aria-label="Toggle menu"]');
+              const menuButton = document.querySelector(
+                'button[aria-label="Toggle menu"]'
+              );
               menuButton?.dispatchEvent(event);
             }
           }}

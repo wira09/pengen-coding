@@ -1,4 +1,6 @@
 import Menucode from "./menucode";
+import Pagination from "./pagination";
+import Filter from "./filter";
 
 const code = () => {
   return (
@@ -11,7 +13,9 @@ const code = () => {
           </h1>
           <div className="ml-1 mt-3 h-1 w-32 rounded bg-amber-500" />
         </div>
+        <Filter />
         <Menucode />
+        <Pagination />
       </div>
     </div>
   );

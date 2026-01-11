@@ -1,4 +1,6 @@
 import Menukelas from "./menukelas";
+import Pagination from "./pagination";
+import Filter from "./filter";
 
 const kelas = () => {
   return (
@@ -11,7 +13,9 @@ const kelas = () => {
           </h1>
           <div className="ml-1 mt-3 h-1 w-32 rounded bg-amber-500" />
         </div>
+        <Filter />
         <Menukelas />
+        <Pagination />
       </div>
     </div>
   );

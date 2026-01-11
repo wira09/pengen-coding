@@ -51,9 +51,6 @@ const Navbar = () => {
                 width={120}
                 height={120}
               />
-              {/* <span className="hidden sm:block text-lg font-bold text-gray-800">
-                Pengen <span className="font-bold text-amber-600">Coding</span>
-              </span> */}
             </div>
           </div>
 

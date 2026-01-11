@@ -22,7 +22,6 @@ const NavMenu = () => {
             pathname === link.path ? "font-semibold text-amber-600" : ""
           }`}
           onClick={() => {
-            // Close mobile menu when a link is clicked on mobile
             if (window.innerWidth < 1024) {
               const event = new MouseEvent("click", {
                 view: window,

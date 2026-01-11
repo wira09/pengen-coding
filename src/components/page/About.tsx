@@ -37,7 +37,7 @@ const About = () => {
       description:
         "Memiliki keahlian di bidang pengembangan Web, berfokus pada pembuatan website yang efisien, modern, dan mudah digunakan.",
       image: "/foto/ilham.jpeg",
-      profileUrl: "/profile/wira",
+      profileUrl: "https://hamzzz.my.id",
     },
   ];
 

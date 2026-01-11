@@ -140,36 +140,27 @@ const Kontak = () => {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
               Kirim Pesan
             </h2>
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div>
-                  <label
-                    htmlFor="firstName"
-                    className="block text-sm font-medium text-gray-700 mb-2"
-                  >
-                    Nama Depan
-                  </label>
-                  <input
-                    id="firstName"
-                    type="text"
-                    placeholder="Nama depan Anda"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-all duration-200"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="lastName"
-                    className="block text-sm font-medium text-gray-700 mb-2"
-                  >
-                    Nama Belakang
-                  </label>
-                  <input
-                    id="lastName"
-                    type="text"
-                    placeholder="Nama belakang Anda"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-all duration-200"
-                  />
-                </div>
+            <form
+              action="https://formsubmit.co/pengencodingku@gmail.com"
+              method="POST"
+              target="_blank"
+              className="space-y-6"
+            >
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700 mb-2"
+                >
+                  Nama Lengkap
+                </label>
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Nama depan Anda"
+                  className="text-black w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-all duration-200"
+                  required
+                />
               </div>
 
               <div>
@@ -182,23 +173,10 @@ const Kontak = () => {
                 <input
                   id="email"
                   type="email"
+                  name="email"
                   placeholder="Alamat email Anda"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-all duration-200"
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="subject"
-                  className="block text-sm font-medium text-gray-700 mb-2"
-                >
-                  Subjek
-                </label>
-                <input
-                  id="subject"
-                  type="text"
-                  placeholder="Subjek pesan Anda"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-all duration-200"
+                  className="text-black w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-all duration-200"
+                  required
                 />
               </div>
 
@@ -211,9 +189,11 @@ const Kontak = () => {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows={5}
                   placeholder="Tulis pesan Anda di sini..."
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-all duration-200 resize-none"
+                  className="text-black w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-all duration-200 resize-none"
+                  required
                 />
               </div>
 
